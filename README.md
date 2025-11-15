@@ -1,0 +1,1 @@
+You’ll begin by learning the basics of C#, then move through ASP.NET Web Forms, MVC, and Core frameworks. Additional technologies covered include MS SQL Server, Entity Framework, Stored Procedures, Web API, AJAX, and Crystal Reports. You’ll also build user interfaces with Razor Pages and learn GitHub for version control and team collaboration.
