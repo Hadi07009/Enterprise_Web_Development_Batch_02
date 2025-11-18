@@ -200,6 +200,7 @@
     <Compile Include="HRSite.Master.designer.cs">
       <DependentUpon>HRSite.Master</DependentUpon>
     </Compile>
+    <Compile Include="Model\Employee.cs" />
     <Compile Include="NestedMasterPage1.master.cs">
       <DependentUpon>NestedMasterPage1.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

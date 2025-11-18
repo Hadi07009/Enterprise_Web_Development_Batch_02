@@ -1,4 +1,5 @@
 ﻿using HR.DAL;
+using HR.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,12 @@ namespace HR.BLL
     public class EmployeeBLL
     {
         EmployeeDAL ObjEmployeeDAL;
-        public void AddEmployee(string name, string email, string mobile)
+        public void AddEmployee(Employee objEmployee)
         {
             ObjEmployeeDAL = new EmployeeDAL();
+            
 
-            ObjEmployeeDAL.InsertEmployee( name, email, mobile);
+            ObjEmployeeDAL.InsertEmployee(objEmployee);
         }
 
         internal void RemoveEmployee(string employeeID)

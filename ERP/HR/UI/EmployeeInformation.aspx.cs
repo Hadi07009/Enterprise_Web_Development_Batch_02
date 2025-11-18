@@ -1,4 +1,5 @@
 ﻿using HR.BLL;
+using HR.Model;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -23,11 +24,13 @@ namespace HR.UI
         {
             try
             {
-                string employeeName = txtEmployeeName.Text;
-                string employeeEmail = txtEmail.Text;
-                string employeeMobileNo = txtMobileNo.Text;
+                Employee objEmployee = new Employee();
+                objEmployee._name = txtEmployeeName.Text;
+                objEmployee._email = txtEmail.Text;
+                objEmployee._mobileNo = txtMobileNo.Text;
+                objEmployee._tinNo = "";
                 ObjEmployeeBLL = new EmployeeBLL();
-                ObjEmployeeBLL.AddEmployee(employeeName, employeeEmail, employeeMobileNo);                
+                ObjEmployeeBLL.AddEmployee(objEmployee);                
                 ClearControl();
             }
             catch (Exception msgException)
